@@ -1,7 +1,5 @@
 package main
 
-
-
 import (
 	"fmt"
 	"net/http"
@@ -12,7 +10,7 @@ var stop bool
 
 func HomeRouterHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "text/html; charset=utf-8")
-	fmt.Fprintf(w, "Hello, World!",time.Now())
+	fmt.Fprintf(w, "Hello, wtever, World!",time.Now())
 	//stop = true
 }
 func main(){
